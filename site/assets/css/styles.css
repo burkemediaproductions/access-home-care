@@ -924,3 +924,36 @@ input:focus, textarea:focus, select:focus{
   background: #fff;
 }
 
+
+
+/* Square image placeholders for Services + Team cards */
+.card-img-square{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.08);
+  background: rgba(255,255,255,0.6);
+  margin-bottom: 14px;
+  display: block;
+}
+
+/* Slightly smaller square on tight layouts */
+@media (max-width: 680px){
+  .card-img-square{
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+
+/* Soft background section (used under video heroes for callouts) */
+.section-soft{
+  background:
+    radial-gradient(800px 240px at 20% 20%, rgba(148, 84, 173, 0.12), transparent 60%),
+    radial-gradient(900px 280px at 85% 25%, rgba(133, 204, 200, 0.14), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,0.96));
+  border-top: 1px solid rgba(17,17,17,0.06);
+  border-bottom: 1px solid rgba(17,17,17,0.06);
+}
