@@ -92,40 +92,66 @@
 
 <main id="main">
 
-<section class="hero">
-  <div class="container hero-inner">
-    <div>
-      <span class="kicker reveal">In‑home care • Lodi, CA</span>
-      <h1 class="h1 reveal">Compassionate care that helps seniors thrive at home.</h1>
+<section class="hero hero-video">
+  <!-- Background video layer -->
+  <div class="hero-media" aria-hidden="true">
+    <video
+      class="hero-bg-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="/assets/images/seniors.jpg"
+    >
+      <source src="/assets/video/Website-FrontpageBG.mp4" type="video/mp4" />
+    </video>
+
+    <!-- In case video can’t play, this overlay + poster still looks great -->
+    <div class="hero-media-overlay"></div>
+  </div>
+
+  <div class="container hero-inner hero-inner-video">
+    <div class="hero-copy">
+      <span class="kicker reveal">In-home care • Lodi, CA</span>
+
+      <h1 class="h1 reveal">
+        Compassionate care that helps seniors thrive at home.
+      </h1>
+
       <p class="lede reveal">
-        Access Home Care provides dependable in‑home support — from companionship to specialized care —
+        Access Home Care provides dependable in-home support — from companionship to specialized care —
         so families can feel confident and seniors can stay comfortable and independent.
       </p>
+
       <div class="hero-actions reveal">
         <a class="btn primary" href="/contact/">Request a free assessment</a>
         <a class="btn" href="/services/">Explore services</a>
       </div>
 
       <div class="badges reveal" aria-label="Highlights">
-        <div class="badge">✅ Background‑checked caregivers</div>
+        <div class="badge">✅ Background-checked caregivers</div>
         <div class="badge">🕒 Flexible scheduling</div>
         <div class="badge">❤️ Family-first communication</div>
       </div>
     </div>
 
-    <div class="hero-card reveal" aria-label="Happy seniors outdoors">
-      <img src="/assets/images/seniors.jpg" alt="Smiling older couple outdoors" loading="eager" decoding="async">
-      <div class="overlay">
-        <strong style="font-size:18px">Schedule your free in‑home assessment</strong>
-        <small style="color: rgba(255,255,255,.78)">Tell us what you need — we’ll recommend a plan that fits.</small>
-        <div style="display:flex; gap:10px; flex-wrap: wrap; margin-top: 8px;">
+    <aside class="hero-float-card reveal" aria-label="Schedule your free in-home assessment">
+      <div class="hero-float-card-inner">
+        <strong style="font-size:18px">Schedule your free in-home assessment</strong>
+        <small style="color: rgba(255,255,255,.78)">
+          Tell us what you need — we’ll recommend a plan that fits.
+        </small>
+
+        <div class="hero-float-actions">
           <a class="btn primary" href="/contact/">Get started</a>
-          <a class="btn" href="tel:+12099188005">Call (209) 918‑8005</a>
+          <a class="btn" href="tel:+12099188005">Call (209) 918-8005</a>
         </div>
       </div>
-    </div>
+    </aside>
   </div>
 </section>
+
 
 <section class="section">
   <div class="container">
