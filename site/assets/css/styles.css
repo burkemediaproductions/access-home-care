@@ -511,10 +511,13 @@ small{ color: var(--muted); }
 
 /* The actual split card */
 .assessment-card{
-  padding: 0;          /* IMPORTANT: no band padding here */
-  margin: 0;
-  background: none;
+  background: linear-gradient(180deg, #fff, var(--surface-2));
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 10px);
+  box-shadow: 0 18px 45px rgba(18,16,24,.08);
+  padding: 34px;
 }
+
 
 /* Optional subtle divider */
 .section.assessment .container::before{
