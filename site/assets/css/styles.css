@@ -787,20 +787,25 @@ input:focus, textarea:focus, select:focus{
   object-fit: cover;
 }
 
-/* Soft brand-tinted overlay for contrast */
+/* Soft brand-tinted overlay for contrast (LET VIDEO SHOW) */
 .services-bg-overlay {
   position: absolute;
   inset: 0;
   background:
     radial-gradient(
       80% 60% at 20% 20%,
-      rgba(84, 7, 91, 0.25),
+      rgba(84, 7, 91, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      70% 50% at 85% 25%,
+      rgba(31, 138, 138, 0.16),
       transparent 60%
     ),
     linear-gradient(
       180deg,
-      rgba(255,255,255,0.85),
-      rgba(255,255,255,0.95)
+      rgba(255,255,255,0.35),
+      rgba(255,255,255,0.60)
     );
 }
 
