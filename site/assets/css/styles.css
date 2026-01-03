@@ -211,19 +211,74 @@ small{ color: var(--muted); }
 }
 
 
-/* Make copy readable over video */
 .hero-copy{
-  background: rgba(255,255,255,.88);
-  border: 1px solid rgba(255,255,255,.55);
-  border-radius: var(--radius);
-  padding: 24px;
-  box-shadow: 0 22px 55px rgba(18,16,24,.14);
-  backdrop-filter: blur(12px);
+  max-width: 760px;
+  padding: 0;         
+  background: none;     
+  border: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.hero-copy::before{
+  content:"";
+  position:absolute;
+  inset: -48px -48px -48px -48px;
+  z-index: -1;
+  background:
+    radial-gradient(
+      620px 380px at 0% 50%,
+      rgba(84,7,91,.65),
+      rgba(84,7,91,.35) 45%,
+      rgba(84,7,91,.12) 65%,
+      transparent 75%
+    );
+
+  pointer-events:none;
 }
 
 .hero-video .hero-copy{
   max-width: 720px;
 }
+
+.hero-video .h1{
+  color: #111;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.15),
+    0 8px 22px rgba(84,7,91,.25);
+}
+
+.hero-video .lede{
+  color: #1e1b25;
+  text-shadow: 0 1px 2px rgba(0,0,0,.12);
+}
+
+.hero-video .kicker{
+  background: rgba(255,255,255,.78);
+  border-color: rgba(255,255,255,.65);
+}
+
+.hero-video .btn{
+  backdrop-filter: blur(6px);
+}
+
+.hero-video .btn:not(.primary){
+  background: rgba(255,255,255,.85);
+}
+
+@media (max-width: 768px){
+  .hero-copy::before{
+    inset: -36px -24px -36px -24px;
+    background:
+      radial-gradient(
+        520px 420px at 50% 40%,
+        rgba(84,7,91,.72),
+        rgba(84,7,91,.42) 50%,
+        transparent 72%
+      );
+  }
+}
+
 
 /* Floating CTA card (replaces the old image card) */
 .hero-float-card{
