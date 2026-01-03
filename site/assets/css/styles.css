@@ -171,6 +171,7 @@ small{ color: var(--muted); }
 .hero-bg-video{
   width: 100%;
   height: 100%;
+  object-position: center 20%;
   object-fit: cover;
   transform: scale(1.05);
   filter: saturate(1.15) contrast(1.10) brightness(.92);
