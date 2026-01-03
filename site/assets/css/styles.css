@@ -238,17 +238,14 @@ small{ color: var(--muted); }
 
 
 .hero-copy{
-  max-width: 760px;
+  max-width: 720px;
   padding: 0;
   margin: 64px 0; 
   background: none;
   border: none;
   box-shadow: none;
   position: relative;
-}
-
-.hero-video .hero-copy{
-  max-width: 720px;
+  color: #fff;
 }
 
 .hero-video .h1{
