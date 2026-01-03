@@ -55,7 +55,7 @@ small{ color: var(--muted); }
 }
 .header-inner{
   display:flex; align-items:center; justify-content:space-between;
-  padding: 12px 0;
+  padding: 12px;
 }
 .brand{
   display:flex; align-items:center; gap: 12px;
@@ -864,6 +864,7 @@ input:focus, textarea:focus, select:focus{
   .footer-grid{ grid-template-columns: 1fr 1fr; }
   .nav, .header-cta{ display:none; }
   .mobile-toggle{ display:flex; }
+  .brand img{ max-width: 120px; height:auto; }
 }
 @media (max-width: 520px){
   .footer-grid{ grid-template-columns: 1fr; }
