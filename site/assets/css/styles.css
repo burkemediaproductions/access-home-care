@@ -796,18 +796,18 @@ input:focus, textarea:focus, select:focus{
   background:
     radial-gradient(
       80% 60% at 20% 20%,
-      rgba(84, 7, 91, 0.22),
+      rgba(84, 7, 91, 0.17),
       transparent 60%
     ),
     radial-gradient(
       70% 50% at 85% 25%,
-      rgba(31, 138, 138, 0.16),
+      rgba(31, 138, 138, 0.12),
       transparent 60%
     ),
     linear-gradient(
       180deg,
-      rgba(255,255,255,0.35),
-      rgba(255,255,255,0.60)
+      rgba(255,255,255,0.25),
+      rgba(255,255,255,0.30)
     );
 }
 
