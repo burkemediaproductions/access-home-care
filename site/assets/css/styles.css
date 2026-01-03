@@ -498,26 +498,6 @@ small{ color: var(--muted); }
   font-size: 13px;
 }
 
-.assessment-card {
-  padding: 72px 0;    
-  margin-top: -40px;       
-  background: #ffffff;
-}
-
-.assessment-card::before {
-  content: "";
-  display: block;
-  height: 1px;
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(84,7,91,.25),
-    transparent
-  );
-  margin-bottom: 64px;
-}
-
 /* The band / section spacing */
 .section.assessment{
   padding: 72px 0;
@@ -562,8 +542,9 @@ small{ color: var(--muted); }
   }
   .assessment-media{
     min-height: 200px;
-    order: -1; /* puts media on top on mobile */
-   margin-bottom: 28px;
+    order: -1;
+    margin-bottom: 28px;
+    position: relative;
   }
   .assessment-copy {
     padding: 0 4px;
