@@ -518,6 +518,34 @@ small{ color: var(--muted); }
   margin-bottom: 64px;
 }
 
+/* The band / section spacing */
+.section.assessment{
+  padding: 72px 0;
+  background: #fff;
+  margin-top: -40px;
+}
+
+.section.assessment .container{
+  position: relative;
+}
+
+/* The actual split card */
+.assessment-card{
+  padding: 0;          /* IMPORTANT: no band padding here */
+  margin: 0;
+  background: none;
+}
+
+/* Optional subtle divider */
+.section.assessment .container::before{
+  content:"";
+  display:block;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(84,7,91,.22), transparent);
+  margin-bottom: 34px;
+}
+
 @media (max-width: 980px) {
   .assessment-card {
     padding: 56px 0;
