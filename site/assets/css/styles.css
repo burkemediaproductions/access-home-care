@@ -785,6 +785,8 @@ input:focus, textarea:focus, select:focus{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: saturate(1.1) contrast(1.05) brightness(0.95);
+  transform: scale(1.03);
 }
 
 /* Soft brand-tinted overlay for contrast (LET VIDEO SHOW) */
