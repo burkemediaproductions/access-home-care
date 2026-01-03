@@ -745,6 +745,34 @@ small{ color: var(--muted); }
   }
 }
 
+/* Who we serve - image cards */
+.serve-card{
+  padding: 18px;
+}
+
+.serve-media{
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(18,16,24,.10);
+  box-shadow: 0 14px 30px rgba(18,16,24,.10);
+  margin: -2px 0 14px; /* creates a nice “top” block inside the card */
+  background: #fff;
+}
+
+.serve-media img{
+  width: 100%;
+  height: 180px;           /* consistent height across all cards */
+  object-fit: cover;
+  display: block;
+}
+
+/* Slightly taller on large screens */
+@media (min-width: 981px){
+  .serve-media img{
+    height: 200px;
+  }
+}
+
 
 .form{
   display:grid;
