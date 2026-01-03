@@ -146,9 +146,10 @@ small{ color: var(--muted); }
 }
 /* ===== Hero Video Variant ===== */
 .hero-video{
+  position: relative;
   min-height: clamp(560px, 70vh, 820px);
   display: grid;
-  align-items: center;
+  place-items: center;   /* this is the key */
   padding: 0;
 }
 
@@ -160,6 +161,14 @@ small{ color: var(--muted); }
 }
 
 /* Background media layer */
+
+.hero-media{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+}
+
 .hero-media-overlay{
   position: absolute;
   inset: 0;
@@ -219,16 +228,19 @@ small{ color: var(--muted); }
 .hero-inner-video{
   position: relative;
   z-index: 2;
-  padding: 72px 0 72px;
+  padding: 0;        
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: start;
 }
 
 
+
 .hero-copy{
   max-width: 760px;
   padding: 0;
+  margin: 64px 0; 
   background: none;
   border: none;
   box-shadow: none;
@@ -283,6 +295,11 @@ small{ color: var(--muted); }
   }
 }
 
+@media (max-width: 520px){
+  .hero-copy{
+    margin: 34px 0 22px;
+  }
+}
 
 
 /* Floating CTA card (replaces the old image card) */
