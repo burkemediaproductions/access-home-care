@@ -722,8 +722,6 @@ small{ color: var(--muted); }
 }
 
 .step-media img {
-  width: 110px;
-  height: 110px;
   object-fit: cover;
   border-radius: 14px;
   box-shadow:
@@ -744,11 +742,6 @@ small{ color: var(--muted); }
 
   .step-media {
     flex: 0 0 96px;
-  }
-
-  .step-media img {
-    width: 96px;
-    height: 96px;
   }
 }
 
