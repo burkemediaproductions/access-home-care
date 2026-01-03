@@ -428,6 +428,77 @@ small{ color: var(--muted); }
 .h2{ font-size: 28px; margin: 0; letter-spacing: -0.01em; }
 .subhead{ color: var(--muted); max-width: 70ch; }
 
+
+/* Split assessment band */
+.assessment-split{
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.assessment-copy{
+  padding: 6px 2px;
+}
+
+/* Media card */
+.assessment-media{
+  position: relative;
+  border-radius: calc(var(--radius) + 6px);
+  overflow:hidden;
+  min-height: 220px;
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 40px rgba(18,16,24,.10);
+  background: #000;
+}
+
+.assessment-media img,
+.assessment-media video{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+  opacity: .92;
+  transform: scale(1.03);
+}
+
+.assessment-media-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(600px 260px at 10% 15%, rgba(84,7,91,.45), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.45));
+}
+
+.assessment-media-caption{
+  position:absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 12px;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  gap: 4px;
+  text-shadow: 0 2px 10px rgba(0,0,0,.55);
+}
+
+.assessment-media-caption span{
+  color: rgba(255,255,255,.82);
+  font-size: 13px;
+}
+
+/* Mobile stack */
+@media (max-width: 980px){
+  .assessment-split{
+    grid-template-columns: 1fr;
+  }
+  .assessment-media{
+    min-height: 200px;
+    order: -1; /* puts media on top on mobile */
+  }
+}
+
+
 .grid{
   display:grid;
   gap: 14px;
