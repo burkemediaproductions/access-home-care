@@ -773,6 +773,18 @@ small{ color: var(--muted); }
   }
 }
 
+.call-btn {
+  width: 100%;
+  max-width: 360px;
+  justify-content: center;
+  gap: 12px;
+}
+
+.call-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
 
 .form{
   display:grid;
