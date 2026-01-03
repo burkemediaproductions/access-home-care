@@ -160,12 +160,27 @@ small{ color: var(--muted); }
 }
 
 /* Background media layer */
-.hero-media{
+.hero-media-overlay{
   position: absolute;
   inset: 0;
-  z-index: 0;
-  overflow: hidden;
+  background:
+    /* left focus for text */
+    radial-gradient(900px 520px at 20% 35%, rgba(84,7,91,.62), transparent 60%),
+
+    /* right color balance */
+    radial-gradient(900px 520px at 90% 30%, rgba(31,138,138,.32), transparent 60%),
+
+    /* overall cinematic wash */
+    linear-gradient(135deg,
+      rgba(0,0,0,.35),
+      rgba(0,0,0,.15) 45%,
+      rgba(255,255,255,.04) 100%
+    ),
+
+    /* fade to page */
+    linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(255,255,255,.90) 92%);
 }
+
 
 /* Video fills the hero */
 .hero-bg-video{
@@ -213,28 +228,11 @@ small{ color: var(--muted); }
 
 .hero-copy{
   max-width: 760px;
-  padding: 0;         
-  background: none;     
+  padding: 0;
+  background: none;
   border: none;
   box-shadow: none;
   position: relative;
-}
-
-.hero-copy::before{
-  content:"";
-  position:absolute;
-  inset: -48px -48px -48px -48px;
-  z-index: -1;
-  background:
-    radial-gradient(
-      620px 380px at 0% 50%,
-      rgba(84,7,91,.65),
-      rgba(84,7,91,.35) 45%,
-      rgba(84,7,91,.12) 65%,
-      transparent 75%
-    );
-
-  pointer-events:none;
 }
 
 .hero-video .hero-copy{
@@ -242,42 +240,49 @@ small{ color: var(--muted); }
 }
 
 .hero-video .h1{
-  color: #111;
+  color: #ffffff;
   text-shadow:
-    0 2px 4px rgba(0,0,0,.15),
-    0 8px 22px rgba(84,7,91,.25);
+    0 2px 6px rgba(0,0,0,.45),
+    0 12px 28px rgba(0,0,0,.35);
 }
 
-.hero-video .lede{
-  color: #1e1b25;
-  text-shadow: 0 1px 2px rgba(0,0,0,.12);
+.hero-video .kicker{
+  background: rgba(255,255,255,.85);
+  color: var(--primary);
+  border-color: rgba(255,255,255,.75);
 }
+
+
 
 .hero-video .kicker{
   background: rgba(255,255,255,.78);
   border-color: rgba(255,255,255,.65);
 }
 
-.hero-video .btn{
-  backdrop-filter: blur(6px);
+.hero-video .btn.primary{
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.35),
+    inset 0 0 0 1px rgba(255,255,255,.15);
 }
 
 .hero-video .btn:not(.primary){
-  background: rgba(255,255,255,.85);
+  background: rgba(255,255,255,.92);
+  color: var(--text);
 }
 
+
 @media (max-width: 768px){
-  .hero-copy::before{
-    inset: -36px -24px -36px -24px;
-    background:
-      radial-gradient(
-        520px 420px at 50% 40%,
-        rgba(84,7,91,.72),
-        rgba(84,7,91,.42) 50%,
-        transparent 72%
-      );
+  .hero-video .h1{
+    text-shadow:
+      0 3px 8px rgba(0,0,0,.55),
+      0 16px 34px rgba(0,0,0,.45);
+  }
+
+  .hero-video .lede{
+    color: rgba(255,255,255,.95);
   }
 }
+
 
 
 /* Floating CTA card (replaces the old image card) */
