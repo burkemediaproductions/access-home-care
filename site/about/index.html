@@ -93,11 +93,12 @@
 <main id="main">
 
 <section class="hero hero-video">
-  <div class="hero-bg">
+  <!-- Match home page structure so the video sits behind the hero content -->
+  <div class="hero-media" aria-hidden="true">
     <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="/assets/video/Website-About.jpg">
       <source src="/assets/video/Website-About.mp4" type="video/mp4" />
     </video>
-    <div class="hero-overlay"></div>
+    <div class="hero-media-overlay"></div>
   </div>
 
   <div class="container">

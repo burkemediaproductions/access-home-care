@@ -93,11 +93,12 @@
 <main id="main">
 
 <section class="hero hero-video">
-  <div class="hero-bg">
+  <!-- Match home page structure so the video sits behind the hero content -->
+  <div class="hero-media" aria-hidden="true">
     <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="/assets/video/Website-Services.jpg">
       <source src="/assets/video/Website-Services.mp4" type="video/mp4" />
     </video>
-    <div class="hero-overlay"></div>
+    <div class="hero-media-overlay"></div>
   </div>
 
   <div class="container">
@@ -148,6 +149,9 @@
     <div class="grid cols-3">
       
         <a class="card soft reveal" href="/services/general-services/" style="display:block">
+          <div class="card-image">
+            <img class="card-img-square" src="" alt="" loading="lazy">
+          </div>
           <div class="meta"><span style="color:var(--primary); font-weight:900">Service</span><span>•</span><span>General Services</span></div>
           <h3>General Services</h3>
           <p>Everyday support for safer, easier days — meals, light housekeeping, errands, reminders, and more.</p>
@@ -155,6 +159,9 @@
         </a>
 
         <a class="card soft reveal" href="/services/companionship/" style="display:block">
+          <div class="card-image">
+            <img class="card-img-square" src="" alt="" loading="lazy">
+          </div>
           <div class="meta"><span style="color:var(--primary); font-weight:900">Service</span><span>•</span><span>Companionship</span></div>
           <h3>Companionship</h3>
           <p>Friendly, consistent connection that supports emotional well-being and reduces isolation.</p>
@@ -162,6 +169,12 @@
         </a>
 
         <a class="card soft reveal" href="/services/alzheimers-dementia-care/" style="display:block">
+          <div class="card-image">
+            <img class="card-img-square" src="" alt="" loading="lazy">
+          </div>
+          <div class="card-image">
+            <img class="card-img-square" src="" alt="" loading="lazy">
+          </div>
           <div class="meta"><span style="color:var(--primary); font-weight:900">Service</span><span>•</span><span>Alzheimer’s &amp; Dementia Care</span></div>
           <h3>Alzheimer’s &amp; Dementia Care</h3>
           <p>Supportive routines and gentle supervision tailored for cognitive changes and memory care needs.</p>
@@ -169,6 +182,9 @@
         </a>
 
         <a class="card soft reveal" href="/services/in-facility-postfacility-care/" style="display:block">
+          <div class="card-image">
+            <img class="card-img-square" src="" alt="" loading="lazy">
+          </div>
           <div class="meta"><span style="color:var(--primary); font-weight:900">Service</span><span>•</span><span>In-Facility &amp; Post‑Facility Care</span></div>
           <h3>In-Facility &amp; Post‑Facility Care</h3>
           <p>Extra help during transitions — hospital discharge, rehab, or assisted living support.</p>
@@ -176,6 +192,9 @@
         </a>
 
         <a class="card soft reveal" href="/services/infectious-disease/" style="display:block">
+          <div class="card-image">
+            <img class="card-img-square" src="" alt="" loading="lazy">
+          </div>
           <div class="meta"><span style="color:var(--primary); font-weight:900">Service</span><span>•</span><span>Infectious Disease Support</span></div>
           <h3>Infectious Disease Support</h3>
           <p>Care with smart precautions to reduce risk and support recovery in the home.</p>
@@ -183,6 +202,9 @@
         </a>
 
         <a class="card soft reveal" href="/services/respite-care/" style="display:block">
+          <div class="card-image">
+            <img class="card-img-square" src="" alt="" loading="lazy">
+          </div>
           <div class="meta"><span style="color:var(--primary); font-weight:900">Service</span><span>•</span><span>Respite Care</span></div>
           <h3>Respite Care</h3>
           <p>Flexible coverage so family caregivers can rest, recharge, and keep life moving.</p>
@@ -190,6 +212,9 @@
         </a>
 
         <a class="card soft reveal" href="/services/end-of-life/" style="display:block">
+          <div class="card-image">
+            <img class="card-img-square" src="" alt="" loading="lazy">
+          </div>
           <div class="meta"><span style="color:var(--primary); font-weight:900">Service</span><span>•</span><span>End‑of‑Life Support</span></div>
           <h3>End‑of‑Life Support</h3>
           <p>Comfort-focused care and companionship that brings steadiness to an emotional season.</p>
@@ -197,6 +222,9 @@
         </a>
 
         <a class="card soft reveal" href="/services/traveling-caregiver/" style="display:block">
+          <div class="card-image">
+            <img class="card-img-square" src="" alt="" loading="lazy">
+          </div>
           <div class="meta"><span style="color:var(--primary); font-weight:900">Service</span><span>•</span><span>Traveling Caregiver</span></div>
           <h3>Traveling Caregiver</h3>
           <p>A trusted companion for travel days, appointments, or family trips — so your loved one isn’t alone.</p>
