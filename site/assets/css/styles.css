@@ -259,14 +259,6 @@ small{ color: var(--muted); }
 }
 
 .hero-video .kicker{
-  background: rgba(255,255,255,.85);
-  color: var(--primary);
-  border-color: rgba(255,255,255,.75);
-}
-
-
-
-.hero-video .kicker{
   background: rgba(255,255,255,.78);
   border-color: rgba(255,255,255,.65);
 }
