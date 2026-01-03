@@ -441,8 +441,6 @@ small{ color: var(--muted); }
   padding: 6px 24px 6px 2px;
 }
 
-  position: relative;
-
 .assessment-copy h2 {
   margin-bottom: 14px;
 }
