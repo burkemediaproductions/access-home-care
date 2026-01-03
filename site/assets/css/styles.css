@@ -767,3 +767,51 @@ input:focus, textarea:focus, select:focus{
 @media (max-width: 520px){
   .footer-grid{ grid-template-columns: 1fr; }
 }
+
+/* Services section background video */
+.services-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.services-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.services-bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Soft brand-tinted overlay for contrast */
+.services-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      80% 60% at 20% 20%,
+      rgba(84, 7, 91, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.85),
+      rgba(255,255,255,0.95)
+    );
+}
+
+/* Ensure content stays above video */
+.services-bg > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Cards remain crisp and solid */
+.services-bg .card {
+  background: #fff;
+}
+
