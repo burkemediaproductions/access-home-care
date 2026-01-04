@@ -957,3 +957,60 @@ input:focus, textarea:focus, select:focus{
   border-top: 1px solid rgba(17,17,17,0.06);
   border-bottom: 1px solid rgba(17,17,17,0.06);
 }
+
+/* Hero video: make page chip + lead readable on video */
+.hero-video .pill{
+  background: rgba(255,255,255,0.92);
+  color: var(--primary);
+  border: 1px solid rgba(255,255,255,0.55);
+}
+.hero-video .lead,
+.hero-video .hero-copy p{
+  color: rgba(255,255,255,0.92);
+}
+
+/* Custom bullet image */
+ul.bullets{
+  list-style: none;
+  padding-left: 0;
+  margin: 14px 0 0;
+}
+ul.bullets li{
+  position: relative;
+  padding-left: 28px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+ul.bullets li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/images/bullet.png") center/contain no-repeat;
+  opacity: 0.95;
+}
+
+/* Landscape card images (Services) */
+.card-img-landscape{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.08);
+  background: rgba(255,255,255,0.6);
+  margin-bottom: 14px;
+  display: block;
+}
+
+@media (max-width: 980px){
+  .assessment-split{
+    grid-template-columns: 1fr;
+  }
+  .assessment-media{
+    order: -1;
+    min-height: 220px;
+  }
+}
