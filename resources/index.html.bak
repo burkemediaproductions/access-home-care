@@ -1,0 +1,713 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#54075b" name="theme-color"/>
+<title>Resources | Access Home Care</title>
+<meta content="Community resources for seniors and families in and around Lodi, CA. Adult day care, senior centers, veteran services, and more." name="description"/>
+<link href="https://accesshomecare.com/resources/" rel="canonical"/>
+<link href="/assets/images/access-home-care-logo.png" rel="icon"/>
+<meta content="Resources | Access Home Care" property="og:title"/>
+<meta content="Community resources for seniors and families in and around Lodi, CA. Adult day care, senior centers, veteran services, and more." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://accesshomecare.com/assets/images/seniors.jpg" property="og:image"/>
+<meta content="https://accesshomecare.com/resources/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link as="style" href="/assets/css/styles.css" rel="preload"/>
+<link href="/assets/css/styles.css" rel="stylesheet"/>
+<script defer="" src="/assets/js/main.js"></script>
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "name":"Access Home Care",
+    "url":"https://accesshomecare.com",
+    "telephone":"+1-209-918-8010",
+    "areaServed": [
+            {
+              "@type": "City",
+              "name": "Lodi",
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "CA"
+              }
+            },
+            {
+              "@type": "City",
+              "name": "Stanislaus",
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "CA"
+              }
+            },
+            {
+              "@type": "City",
+              "name": "San Joaquin",
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "CA"
+              }
+            },
+            {
+              "@type": "City",
+              "name": "Calaveras",
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "CA"
+              }
+            },
+               {
+              "@type": "City",
+              "name": "Amador",
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "CA"
+              }
+            },
+               {
+              "@type": "City",
+              "name": "Tuolumne",
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "CA"
+              }
+            },
+               {
+              "@type": "City",
+              "name": "Sacramento",
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "CA"
+              }
+            }
+          ],
+    "logo":"https://accesshomecare.com/assets/images/access-home-care-logo.png",
+    "image":"https://accesshomecare.com/assets/images/seniors.jpg"
+  }
+  </script>
+<style>
+.resources-wrap{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.resources-wrap > .card{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.resources-wrap .card{
+  padding: 20px;
+}
+
+.resources-wrap .card h3{
+  font-size: 1.15rem;
+  letter-spacing: .2px;
+  margin-bottom: .35rem;
+  padding-bottom: .65rem;
+  border-bottom: 1px solid rgba(0,0,0,.10);
+}
+
+.resources-wrap .card > .subhead{
+  margin-bottom: 1rem;
+}
+
+.resources-wrap .card ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.resources-wrap .card li{
+  padding: .7rem 0;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.resources-wrap .card li:last-child{
+  border-bottom: none;
+}
+
+.county-group{
+  margin-top: 1.15rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(84,7,91,.12);
+}
+
+.county-group:first-of-type{
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.county-title{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin: 0 0 .75rem;
+  padding: .48rem .8rem;
+  border-radius: 999px;
+  background: rgba(84,7,91,.08);
+  border: 1px solid rgba(84,7,91,.12);
+  color: var(--primary);
+  font-weight: 800;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.county-list{
+  display:grid;
+  gap: 0;
+}
+
+.res-item{
+  display:block;
+}
+
+.res-name{
+  display:block;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: .28rem;
+}
+
+.res-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.35rem .9rem;
+  align-items:baseline;
+  font-size: .95rem;
+  opacity: .95;
+}
+
+.res-address,
+.res-phone,
+.res-link{
+  display:inline-flex;
+  gap:.35rem;
+  align-items:baseline;
+}
+
+.res-address svg,
+.res-phone svg,
+.res-link svg{
+  width: 16px;
+  height: 16px;
+  opacity: .72;
+  transform: translateY(2px);
+  flex: 0 0 auto;
+}
+
+.res-phone a,
+.res-link a{
+  text-decoration: none;
+}
+
+.res-phone a:hover,
+.res-link a:hover{
+  text-decoration: underline;
+}
+
+.resources-wrap .panel{
+  margin-top: 18px;
+}
+
+@media (max-width: 900px){
+  .resources-wrap{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px){
+  .res-meta{
+    display:block;
+  }
+
+  .res-phone,
+  .res-link{
+    display:block;
+    margin-top:.2rem;
+  }
+
+  .county-title{
+    font-size: .78rem;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Access Home Care home">
+      <img src="/assets/images/access-home-care-logo.png" width="180" height="60" alt="Access Home Care logo" loading="eager" decoding="async">
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a data-nav href="/">Home</a>
+      <a data-nav href="/services/">Services</a>
+      <a data-nav href="/about/">About</a>
+      
+      <a data-nav href="/employment/">Employment</a>
+      <a data-nav href="/contact/">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <a class="btn ghost small" href="tel:+12099188010" aria-label="Call Access Home Care">(209) 918-8010</a>
+      <a class="btn primary small" href="/contact/">Request Care</a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="mobile-toggle hamburger" type="button"
+      aria-label="Open menu"
+      aria-controls="mobile-drawer"
+      aria-expanded="false"
+      data-drawer-open>
+      <span class="hamburger-lines" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+  </div>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" data-drawer data-open="false" aria-hidden="true" aria-hidden="true" inert>
+
+  
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+      <div class="drawer-top">
+        <div class="drawer-brand">
+          <img src="/assets/images/access-home-care-logo.png" width="160" height="54" alt="Access Home Care logo" loading="lazy" decoding="async">
+        </div>
+
+        <button class="drawer-close" type="button" aria-label="Close menu" data-drawer-close>
+          <span aria-hidden="true">Ã—</span>
+        </button>
+      </div>
+
+      <nav class="drawer-nav" aria-label="Mobile primary">
+        <a data-nav href="/">Home</a>
+        <a data-nav href="/services/">Services</a>
+        <a data-nav href="/about/">About</a>
+        
+        <a data-nav href="/employment/">Employment</a>
+        <a data-nav href="/contact/">Contact</a>
+      </nav>
+
+      <div class="drawer-cta">
+        <a class="btn ghost" href="tel:+12099188010">(209) 918-8010</a>
+        <a class="btn primary" href="/contact/">Request Care</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+<div class="container hero-inner" style="padding:44px 0 42px">
+<div>
+<span class="kicker reveal">Resources</span>
+<h1 class="h1 reveal">Helpful community resources.</h1>
+<p class="lede reveal">
+        A starting point for seniors and families. Weâ€™ll expand this list and connect it to ServiceUp later
+        so your team can maintain it easily.
+      </p>
+<div class="hero-actions reveal">
+<a class="btn primary" href="/contact/">Need help navigating care?</a>
+<a class="btn" href="/services/">Explore services</a>
+</div>
+</div>
+<div class="panel highlight reveal">
+<h3 style="margin-top:0">Quick note</h3>
+<p class="subhead">
+        Resources below are curated starting points for families in the region. Hours, eligibility, and contact details can changeâ€”please call ahead to confirm. If you notice anything outdated, let us know and weâ€™ll update it.
+      </p>
+</div>
+</div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="resources-wrap">
+
+          <!-- ADULT DAY CARE CENTERS -->
+          <div class="card reveal">
+            <h3>Adult day care centers</h3>
+            <p class="subhead">Social programs, supervision, activities, and caregiver relief.</p>
+
+            <div class="county-group">
+              <div class="county-title">Sacramento County</div>
+              <ul class="county-list">
+                <li>
+                  <span class="res-item">
+                    <span class="res-name">Golden Days Adult Day Health</span>
+                    <span class="res-meta">
+                      <span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>10293 Rockingham Drive, Sacramento, CA 95827</span></span>
+                      <span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19166616194">(916) 661-6194</a></span>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="res-item">
+                    <span class="res-name">Love Joy Adult Day Care Center</span>
+                    <span class="res-meta">
+                      <span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>915 27th Street, Sacramento, CA 95816</span></span>
+                      <span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19168085462">(916) 808-5462</a></span>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="res-item">
+                    <span class="res-name">Triple R Adult Program</span>
+                    <span class="res-meta">
+                      <span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1215 Merkley Avenue, Sacramento, CA 95961</span></span>
+                      <span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19163716011">(916) 371-6011</a></span>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">San Joaquin County</div>
+              <ul class="county-list">
+                <li>
+                  <span class="res-item">
+                    <span class="res-name">Active Life Adult Day Center</span>
+                    <span class="res-meta">
+                      <span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>7209 Tam Oâ€™Shanter Drive, Stockton, CA 95210</span></span>
+                      <span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12092601777">(209) 260-1777</a></span>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="res-item">
+                    <span class="res-name">Adventist Health Lodi Memorial Day Services</span>
+                    <span class="res-meta">
+                      <span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>125 Hutchins Street, Suite A, Lodi, CA 95240</span></span>
+                      <span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12093694443">(209) 369-4443</a></span>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="res-item">
+                    <span class="res-name">Linden Day Center</span>
+                    <span class="res-meta">
+                      <span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12094308869">(209) 430-8869</a></span>
+                      <span class="res-link"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/><path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg><a href="https://www.linden-day-program" target="_blank" rel="noopener noreferrer">Website</a></span>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="res-item">
+                    <span class="res-name">Lodi Community Center</span>
+                    <span class="res-meta">
+                      <span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>415 S. Sacramento Street, Lodi, CA 95240</span></span>
+                      <span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12093317516">(209) 331-7516</a></span>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Stanislaus County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Bethany Home â€“ Adult Day Services</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1010 2nd Street, Ripon, CA 95366</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12095991593">(209) 599-1593</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Modesto CAPS</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1900 Blue Gum Avenue, Modesto, CA 95358</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12095761807">(209) 576-1807</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Stable Living</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>2380 N Walnut Road, Turlock, CA 95380</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12098509275">(209) 850-9275</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Sunlight Adult Day Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1581 Cummins Drive, Modesto, CA 95358</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12094080019">(209) 408-0019</a></span></span></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ASSISTED LIVING FACILITIES -->
+          <div class="card reveal">
+            <h3>Assisted living facilities</h3>
+            <p class="subhead">Residential care and memory care options in the region.</p>
+
+            <div class="county-group">
+              <div class="county-title">Amador &amp; Calaveras County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Amador Residential Care</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>155 Placer Drive, Jackson, CA 95642</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12092234444">(209) 223-4444</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Argonaut Care Home</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>860 Argonaut Drive, Jackson, CA 95642</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12092178264">(209) 217-8264</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Avalon Health Care â€“ San Andreas</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>900 Mountain Ranch Road, San Andreas, CA 95249</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12097543823">(209) 754-3823</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Foothill Village Senior Living</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1400 Foothill Village Drive, Angels Camp, CA 95222</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12097367312">(209) 736-7312</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Sacramento County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Gramercy Court Assisted Living &amp; Memory Care</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>2200 Gramercy Drive, Sacramento, CA 95825</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19164822200">(916) 482-2200</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Greenhaven Estates Assisted Living &amp; Memory Care</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>7548 Greenhaven Drive, Sacramento, CA 95831</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19167133583">(916) 713-3583</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">The Commons at Elk Grove</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>9564 Sabrina Lane, Elk Grove, CA 95758</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19162264283">(916) 226-4283</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">San Joaquin County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Camlu Assisted Living</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>6037 N Pershing Avenue, Stockton, CA 95207</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12099512030">(209) 951-2030</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Del Monte Assisted Living &amp; Memory Care</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>517 E Fulton Street, Stockton, CA 95204</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12099105910">(209) 910-5910</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Sunny Place of Stockton</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>807 W Swain Road, Stockton, CA 95207</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12099568677">(209) 956-8677</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">The Oaks at Inglewood</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>6725 Inglewood Avenue, Stockton, CA 95207</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12099576257">(209) 957-6257</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Stanislaus County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Bethany Home</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>930 W Main Street, Ripon, CA 95366</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12095994221">(209) 599-4221</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Orangeburg Memory Care</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1248 Nelson Avenue, Modesto, CA 95350</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12095272222">(209) 527-2222</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">The Stratford at Beyer Park</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>3529 Forest Glen Drive, Modesto, CA 95355</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12092361900">(209) 236-1900</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Turlock Residential</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1101 E Tuolumne Road, Turlock, CA 95382</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12096678409">(209) 667-8409</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Tuolumne County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Casa Viejos Assisted Living</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>18760 Chabroullian Road, Jamestown, CA 95327</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12099845124">(209) 984-5124</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Meadowview Manor</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>19227 South Court, Sonora, CA 95370</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12095365685">(209) 536-5685</a></span></span></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MORE INFORMATION & RESOURCES -->
+          <div class="card reveal">
+            <h3>More information &amp; resources</h3>
+            <p class="subhead">Caregiver support, disability resources, and community assistance.</p>
+
+            <div class="county-group">
+              <div class="county-title">Amador &amp; Calaveras County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Common Ground Senior Services</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>423 E St Charles Street, San Andreas, CA 95249</span></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Kit Carson Nursing &amp; Rehab</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>811 Court Street, Jackson, CA 95642</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12092232231">(209) 223-2231</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Motherlode Seniors Inc.</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1219 Raspberry Lane, Angels Camp, CA 95222</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12097361778">(209) 736-1778</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Sacramento County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">American Heritage Hospice</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1837 Iron Point Road, Folsom, CA 95630</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19163065200">(916) 306-5200</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Joshuaâ€™s House Hospice</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1501 N C Street, Sacramento, CA 95811</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19165020946">(916) 502-0946</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">San Joaquin County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Hospice of San Joaquin</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>3888 Pacific Avenue, Stockton, CA 95204</span></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Stanislaus County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Progressive Home Health &amp; Hospice Care</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1619 H Street, Modesto, CA 95354</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12094223700">(209) 422-3700</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Tuolumne County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Adventist Health Hospice â€“ Sonora</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>20100 Cedar Road, Sonora, CA 95370</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12095365685">(209) 536-5685</a></span></span></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SENIOR CENTERS -->
+          <div class="card reveal">
+            <h3>Senior centers</h3>
+            <p class="subhead">Meals, activities, classes, and community connection.</p>
+
+            <div class="county-group">
+              <div class="county-title">Amador &amp; Calaveras County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Calaveras Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>956 Mountain Ranch Road, San Andreas, CA 95249</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12097543967">(209) 754-3967</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Sacramento County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Broadway Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>5200 Broadway, Sacramento, CA 95820</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19164564731">(916) 456-4731</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Hart Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>915 27th Street, Sacramento, CA 95816</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19168085462">(916) 808-5462</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Senior Center of Elk Grove</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>8230 Civic Center Drive, Elk Grove, CA 95757</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19166853160">(916) 685-3160</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Stanford Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>520 W El Camino Avenue, Sacramento, CA 95833</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19169271819">(916) 927-1819</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">San Joaquin County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Lathrop Park Senior Citizens Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>15701 5th Street, Lathrop, CA 95330</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12099417380">(209) 941-7380</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Lodi Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>105 S Washington Street, Lodi, CA 95240</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12093691591">(209) 369-1591</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Manteca Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>295 Cherry Lane, Manteca, CA 95337</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12094568650">(209) 456-8650</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Oak Park Senior Citizens Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>730 E Fulton Street, Stockton, CA 95204</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12099377777">(209) 937-7777</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Stanislaus County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Mancini Hall Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>718 Tuolumne Boulevard, Modesto, CA 95351</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12094804389">(209) 480-4389</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Modesto Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>211 Bodem Street, Modesto, CA 95354</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12093412974">(209) 341-2974</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Ripon Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>433 S Wilma Avenue, Ripon, CA 95366</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12095997441">(209) 599-7441</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">Tuolumne County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Tuolumne County Senior Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>540 Greenley Road, Sonora, CA 95370</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12095332622">(209) 533-2622</a></span></span></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- VETERAN SERVICES -->
+          <div class="card reveal">
+            <h3>Veteran services</h3>
+            <p class="subhead">Benefits navigation, support programs, and local contacts.</p>
+
+            <div class="county-group">
+              <div class="county-title">Sacramento County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Sacramento Vet Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1111 Howe Avenue, Sacramento, CA 95825</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+19165667430">(916) 566-7430</a></span></span></span></li>
+              </ul>
+            </div>
+
+            <div class="county-group">
+              <div class="county-title">San Joaquin County</div>
+              <ul class="county-list">
+                <li><span class="res-item"><span class="res-name">Delta Vet Center</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>1327 Historical Plaza Way, Manteca, CA 95356</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12098258320">(209) 825-8320</a></span></span></span></li>
+                <li><span class="res-item"><span class="res-name">Stockton VA Clinic</span><span class="res-meta"><span class="res-address"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg><span>7777 S Freedom Road, French Camp, CA 95231</span></span><span class="res-phone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.2.8.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10 22.2 1.8 14 1.8 3.2 1.8 2.5 2.3 2 3 2h3.8c.7 0 1.2.5 1.2 1.2 0 1.5.3 2.9.8 4.2.1.4 0 .9-.3 1.2L6.6 10.8z"/></svg><a href="tel:+12099463400">(209) 946-3400</a></span></span></span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+  <div class="container">
+    <div class="panel reveal" style="margin-top:18px">
+      <h3 style="margin-top:0">Want to add a resource?</h3>
+      <p class="subhead">Send it to us and weâ€™ll include it in the final build.</p>
+      <a class="btn ghost" href="/contact/">Send a resource</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand / service area -->
+      <div class="footer-brand">
+        <img
+          class="footer-logo"
+          src="/assets/images/access-home-care-logo.png"
+          alt="Access Home Care"
+          width="200"
+          height="66"
+          loading="lazy"
+          decoding="async"
+        />
+
+        <p class="footer-loc">
+          <strong>Lodi, CA</strong>
+          <span aria-hidden="true"> â€¢ </span>
+          <span>Serving surrounding communities</span>
+        </p>
+
+        <p class="footer-serve">
+          <strong>We proudly serve:</strong>
+          Stanislaus, San Joaquin, Calaveras, Amador, Tuolumne and Sacramento
+        </p>
+
+        <p class="footer-note">
+          If you do not see your county listed, please do not hesitate to contact us.
+        </p>
+		<hr style="max-width:250px; margin:5px 0;">
+        <p class="footer-blurb">
+          Compassionate in-home support that helps seniors stay safe, comfortable, and independent â€” right where they belong.
+        </p>
+
+        <small class="footer-copy">Â© <span data-year></span> Access Home Care. All rights reserved.</small>
+      </div>
+
+      <!-- Link columns -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/services/">Services</a></li>
+        </ul>
+		
+		<!-- Social -->
+        <nav class="footer-social" aria-label="Social media">
+          <a
+            class="social-link"
+            href="https://www.facebook.com/accessseniorhomecare"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Access Home Care on Facebook (opens in a new tab)"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"/>
+            </svg>
+          </a>
+
+          <a
+            class="social-link"
+            href="https://www.instagram.com/access.home.care/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Access Home Care on Instagram (opens in a new tab)"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="currentColor"/>
+              <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </nav>
+		
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/employment/">Employment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+12099188010">(209) 918-8010</a></li>
+          <li><a href="/contact/">Request care</a></li>
+          <li><span class="footer-address">777 S. Ham Lane<br/>Suite C2<br/>Lodi, CA 95242</span></li>
+        </ul>
+
+        <div class="footer-credit">
+          <small>Built by BurkeMedia Productions.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
