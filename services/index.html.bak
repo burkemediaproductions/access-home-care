@@ -177,7 +177,11 @@
 
         <div class="hero-actions reveal">
           <a class="btn primary" href="/contact.html">Request care</a>
+<<<<<<< HEAD
+          <a class="btn" href="/resources.html">FAQs</a>
+=======
           <a class="btn" href="/faq/">FAQs</a>
+>>>>>>> 6422ad8 (Updated Characters)
         </div>
       </div>
     </div>
@@ -189,8 +193,13 @@
     <div class="container">
       <div class="assessment-split">
         <div class="assessment-card">
+<<<<<<< HEAD
+          <h3>Common support tasks:</h3>
+          <p class="muted">A snapshot of what many families ask for.</p>
+=======
           <h3>Common support tasks</h3>
           <p class="muted">A snapshot of what many families ask for:</p>
+>>>>>>> 6422ad8 (Updated Characters)
           <ul class="bullets">  
         <li>Safety supervision</li>
         <li>Meal planning &amp; preparation</li>

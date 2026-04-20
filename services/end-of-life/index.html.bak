@@ -4,6 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#54075b">
+<<<<<<< HEAD
+  <title>Traveling Caregiver | Access Home Care</title>
+  <meta name="description" content="A trusted companion for travel days, appointments, or family trips â€” so your loved one isnâ€™t alone. Request a free in-home assessment with Access Home Care.">
+  <link rel="canonical" href="https://accesshomecare.com/services/traveling-caregiver/">
+  <link rel="icon" href="/assets/images/access-home-care-logo.png">
+  <meta property="og:title" content="Traveling Caregiver | Access Home Care">
+  <meta property="og:description" content="A trusted companion for travel days, appointments, or family trips â€” so your loved one isnâ€™t alone. Request a free in-home assessment with Access Home Care.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://accesshomecare.com/assets/images/seniors.jpg">
+  <meta property="og:url" content="https://accesshomecare.com/services/traveling-caregiver/">
+=======
   <title>Endâ€‘ofâ€‘Life Support | Access Home Care</title>
   <meta name="description" content="Comfort-focused care and companionship that brings steadiness to an emotional season. Request a free in-home assessment with Access Home Care.">
   <link rel="canonical" href="https://accesshomecare.com/services/end-of-life/">
@@ -13,6 +24,7 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://accesshomecare.com/assets/images/seniors.jpg">
   <meta property="og:url" content="https://accesshomecare.com/services/end-of-life/">
+>>>>>>> 6422ad8 (Updated Characters)
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preload" href="/assets/css/styles.css" as="style">
@@ -156,6 +168,8 @@
   </div>
 </header>
 
+<<<<<<< HEAD
+=======
   <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
     <div class="drawer-top">
       <strong>Menu</strong>
@@ -181,6 +195,7 @@
   </div>
 </div>
 
+>>>>>>> 6422ad8 (Updated Characters)
 <main id="main">
 
 <section class="hero hero-image">
@@ -188,7 +203,11 @@
   <div class="hero-media" aria-hidden="true">
     <img
       class="hero-bg-image"
+<<<<<<< HEAD
+      src="/assets/images/travelingcaregiver.jpg"
+=======
       src="/assets/images/endoflifesupport.jpg"
+>>>>>>> 6422ad8 (Updated Characters)
       alt=""
       loading="eager"
       decoding="async"
@@ -200,8 +219,13 @@
   <div class="container hero-inner hero-inner-image">
     <div>
       <span class="kicker reveal">Service</span>
+<<<<<<< HEAD
+      <h1 class="h1 reveal">Traveling Caregiver</h1>
+      <p class="lede reveal">A trusted companion for travel days, appointments, or family trips â€” so your loved one isnâ€™t alone.</p>
+=======
       <h1 class="h1 reveal">Endâ€‘ofâ€‘Life Support</h1>
       <p class="lede reveal">Comfort-focused care and companionship that brings steadiness to an emotional season.</p>
+>>>>>>> 6422ad8 (Updated Characters)
       <div class="hero-actions reveal">
         <a class="btn primary" href="/contact/">Request care</a>
         <a class="btn" href="/services/#allservices">Back to services</a>
@@ -209,6 +233,15 @@
     </div>
     <div class="panel highlight reveal">
       <h3 style="margin-top:0">What this can include</h3>
+<<<<<<< HEAD
+      <p class="subhead">From medical appointments to family trips, a travel companion adds safety, patience, and peace of mind along the way.</p>
+      <ul><li>Doorâ€‘toâ€‘door accompaniment and mobility support</li>
+<li>Help with checkâ€‘in, luggage, and navigation</li>
+<li>Medication reminders</li>
+<li>Meal and hydration support during travel</li>
+<li>Companionship throughout the day</li>
+<li>Coordination with family for timing and logistics</li></ul>
+=======
       <p class="subhead">This season deserves dignity, calm, and comfort. We provide presence, gentle assistance, and support that complements hospice care.</p>
       <ul><li>Comfort-focused companionship</li>
 <li>Personal care and repositioning assistance</li>
@@ -216,6 +249,7 @@
 <li>Household support to reduce family load</li>
 <li>Calm overnight or sitting services</li>
 <li>Communication support for family peace of mind</li></ul>
+>>>>>>> 6422ad8 (Updated Characters)
       <p style="margin-top:12px"><small>Final scope and availability can vary â€” weâ€™ll confirm during your assessment.</small></p>
     </div>
   </div>
